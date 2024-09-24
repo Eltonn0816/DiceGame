@@ -17,15 +17,15 @@ namespace DiceGame
             if (answer != "no")
           
             {
-                int sum = 0; 
-               
+                int sum = 0;
+                int sum1 = 0;
                 while (answer != "stop")           
                 {
                     Console.WriteLine("Do you want to roll or stop");
                     answer = Console.ReadLine();
                    
-                    if (answer != "roll")
-                    { Console.WriteLine("You got " + sum + " total."); break; }
+                    if (answer == "stop")
+                    { Console.WriteLine("You got " + sum + " points total."); break; }
                    
                     randomnumber = rand.Next(1, 7);
                     sum += randomnumber;
@@ -34,29 +34,22 @@ namespace DiceGame
                    
                     if (sum > 21)
                     { Console.WriteLine("You got more than 21 points."); break; }
-                }
-                int sum1 = 0;
-                while (sum1 < 17)
-                {
+                   
                     randomnumber = rand.Next(1, 7);
-                    sum1 += randomnumber; 
+                    sum1 += randomnumber;
                    
-                    Console.WriteLine("The dealer rolled " + randomnumber + ", they have " + sum1 + " total.");
-                   
+                    Console.WriteLine("The dealer rolled " + randomnumber + ", they have " + sum1 + " points total.");
                     if (sum1 > 21)
                     { Console.WriteLine("The dealer got more than 21 points."); break; }
                 }
-               
-                if (sum1 + sum > 42) 
-                { Console.WriteLine("You both got more than 21 points, the dealer won."); }
-
+                              
                 if (sum > 21)
                 { Console.WriteLine("You got more than 21 points, you lost."); }
                 
                 if (sum1 > 21)
                 { Console.WriteLine("The dealer got more than 21 points, you won."); }
 
-                else
+                else if (sum < 21)
                 {
                     if (sum1 > sum) { Console.WriteLine("The dealer got more points than you, you lost."); }
                     if (sum1 < sum) { Console.WriteLine("You got more point than the dealer, you won."); }

@@ -12,3 +12,4 @@ C:\Users\elton.lojdkvist\source\repos\DiceGame\DiceGame\obj\Debug\net8.0\refint\
 C:\Users\elton.lojdkvist\source\repos\DiceGame\DiceGame\obj\Debug\net8.0\DiceGame.pdb
 C:\Users\elton.lojdkvist\source\repos\DiceGame\DiceGame\obj\Debug\net8.0\DiceGame.genruntimeconfig.cache
 C:\Users\elton.lojdkvist\source\repos\DiceGame\DiceGame\obj\Debug\net8.0\ref\DiceGame.dll
+C:\Users\elton.lojdkvist\source\repos\DiceGame\DiceGame\obj\Debug\net8.0\DiceGame.sourcelink.json
